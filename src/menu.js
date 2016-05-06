@@ -44,7 +44,7 @@ var MenuState = {
       .start();
 
     // Disclaimer
-    var disclaimer = game.add.text(game.width/2, game.height-5,
+    var disclaimer = game.add.text(game.width/2, game.height-3,
       'Developed by Alex Cavazos - Love you Paulina!', {
         font: '18px Geo', fill: '#ffffff'
       });

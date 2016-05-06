@@ -24,7 +24,7 @@ var LoadState = {
     game.load.image('leftButton', 'assets/leftButton.png');
 
     // Tilemaps
-    game.load.tilemap('map', 'assets/map.json', null, Phaser.Tilemap.TILED_JSON);
+    game.load.tilemap('map', 'assets/map2.json', null, Phaser.Tilemap.TILED_JSON);
 
     // Sound
     game.load.audio('jump', ['assets/jump.ogg', 'assets/jump.mp3']);
