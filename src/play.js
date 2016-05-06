@@ -78,6 +78,11 @@ var PlayState = {
     this.emitter.y = this.player.y;
     this.emitter.start(true, 800, null, 15);
 
+    // Update best score
+    if (localStorage.bestScore < game.global.score) {
+      localStorage.bestScore = game.global.score;
+    }
+
     game.time.events.add(1000, this.startMenu, this);
   },
 

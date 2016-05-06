@@ -3,6 +3,7 @@ var MenuState = {
 
   create: function() {
     game.add.image(0, 0, 'background');
+    localStorage.bestScore = localStorage.bestScore || 0;
 
     // Game name label
     var nameLabel = game.add.text(game.width/2, -50, 'Super Coin Box', {
@@ -16,8 +17,8 @@ var MenuState = {
       .start();
 
     // Score label
-    var scoreLabel = game.add.text(game.width/2, game.height/2, 'Score: ' + game.global.score, {
-      font: '30px Geo', fill: '#ffffff'
+    var scoreLabel = game.add.text(game.width/2, game.height/2, 'Score: ' + game.global.score + '\nBest Score: ' + localStorage.bestScore, {
+      font: '30px Geo', fill: '#ffffff', align: 'center'
     });
     scoreLabel.anchor.setTo(0.5);
 
